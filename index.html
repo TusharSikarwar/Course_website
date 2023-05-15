@@ -1,0 +1,518 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Student Mitra</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@1&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle " style="background-color: rgba(0, 0, 0, 0.444);"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/gallery/logo.svg" alt="" height="75cm" width="100cm">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area header-transparent">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo rounded-circle">
+                                    <a href="./index"><img src="assets/img/gallery/logo.svg" alt="" height="75cm" width="100cm"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li class="active" style="font-family: 'Righteous', cursive;" ><a href="./">Home</a></li>
+                                                <li><a href="./courses" style="font-family: 'Righteous', cursive;">Assignments</a>
+                                                </li>                                               
+                                                <!-- Button -->
+                                                <li class="button-header margin-left " id="reg" ><a href="./register" class="btn" style="font-family: 'Righteous', cursive;">Join as a Contributor</a></li>
+                                                <li class="button-header" id="login"><a href="./login" class="btn btn3" style="font-family: 'Righteous', cursive;">Contributor Log in</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+        <script>
+            function getUrlVars(url) {
+                var hash;
+                var myJson = {};
+                var hashes = url.slice(url.indexOf('?') + 1).split('&');
+                for (var i = 0; i < hashes.length; i++) {
+                    hash = hashes[i].split('=');
+                    myJson[hash[0]] = hash[1];
+                    // If you want to get in native datatypes
+                    // myJson[hash[0]] = JSON.parse(hash[1]); 
+                }
+                return myJson;
+            }
+        
+            let params = getUrlVars(document.URL);
+        
+            if(params.login==0){
+                document.getElementById('reg').style.display = 'none';
+                document.getElementById('login').style.display = 'none';
+            }
+        
+        </script>
+        
+    </header>
+    <main>
+        <!--? slider Area Start-->
+        <section class="slider-area ">
+            <div class="slider-active">
+                <!-- Single Slider -->
+                <div class="single-slider slider-height d-flex align-items-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-7 col-md-12">
+                                <div class="hero__caption">
+                                    <h1 data-animation="fadeInLeft" data-delay="0.2s" style="font-family: 'Righteous', cursive;">A Way to <br> Serve You</h1>
+                                    <p data-animation="fadeInLeft" data-delay="0.4s" style="font-family: 'Fondamento', cursive;">"If you are not willing to learn ,no one can help you.If you are determined to learn ,no one can stop you."</p>
+                                    <a href="./register" class="btn hero-btn" data-animation="fadeInLeft" data-delay="0.7s" style="font-family: 'Righteous', cursive;">Join Free As a Contributor</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>          
+                </div>
+            </div>
+        </section>
+        <!-- ? services-area -->
+        <div class="services-area">
+            <div class="container">
+                <div class="row justify-content-sm-center">
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon1.svg" alt="">
+                            </div>
+                            <div class="features-caption" >
+                                <h3 style="font-family: 'Righteous', cursive;">Assignments</h3>
+                                <p style="font-family: 'Fondamento', cursive;">The automated process all your website tasks.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon2.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3 style="font-family: 'Righteous', cursive;">Expert instructors</h3>
+                                <p style="font-family: 'Fondamento', cursive;">The automated process to help you always.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-8">
+                        <div class="single-services mb-30">
+                            <div class="features-icon">
+                                <img src="assets/img/icon/icon3.svg" alt="">
+                            </div>
+                            <div class="features-caption">
+                                <h3 style="font-family: 'Righteous', cursive;">Life time access</h3>
+                                <p style="font-family: 'Fondamento', cursive;">Get all premium acesss</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Courses area start -->
+        <div class="courses-area section-padding40 fix">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-55">
+                            <h2 style="font-family: 'Righteous', cursive;">Assignments</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses-actives" id="slide">
+                    
+                </div>
+            </div>
+        </div>
+        <script>
+            slider =  document.getElementById('slide')
+            for(let i=1; i<=5 ;i++){
+                
+                axios.post('/subLoad',{
+                    subjectId:i,
+                }).then((response) => {
+                    // console.log(response)
+                    slider.insertAdjacentHTML('afterbegin',`<div class="properties pb-20">
+                            <div class="properties__card">
+                                <div class="properties__img overlay1">
+                                    <a href='/courses?courseName=${response.data.newSubjects}'><img src=${response.data.link} alt="" height="250cm" width="300cm" style="border-radius: 5%;"></a>
+                                </div>
+                                <div class="properties__caption">
+                                    <h3><a href='/courses?courseName=${response.data.newSubjects}' style="font-family: 'Fondamento', cursive;">${response.data.newSubjects}</a></h3>
+                                    <div class="properties__footer d-flex justify-content-between align-items-center">                                    
+                                    </div>
+                                    <a href='/courses?courseName=${response.data.newSubjects}' class="border-btn border-btn2"  style="font-family: 'Fondamento', cursive;">Find out more</a>
+                                </div>
+                            </div>
+                        </div>`)
+                }).catch((err) => {
+                    console.log(err)
+                });
+            }
+        </script>
+        <!-- Courses area End -->
+        <!--? About Area-1 Start -->
+        
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+        <!--? top subjects Area Start -->
+        <div class="topic-area section-padding40">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-55">
+                            <h2 style="font-family: 'Righteous', cursive;">Explore subjects</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="explore">
+
+                    
+                </div>
+                <script>
+                    explore =  document.getElementById('explore')
+                    for(let i=1; i<=4 ;i++){
+                        
+                        axios.post('/subLoad',{
+                            subjectId:i,
+                        }).then((response) => {
+                            // console.log(response)
+                            explore.insertAdjacentHTML('afterbegin',`<div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-topic text-center mb-30">
+                            <div class="topic-img">
+                                <img src=${response.data.link} alt="" height="200cm" width="350cm" style="border-radius: 5%;">
+                                <div class="topic-content-box">
+                                    <div class="topic-content">
+                                        <h3><a href='/courses?courseName=${response.data.newSubjects}'>${response.data.newSubjects}</a></h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`)
+                        }).catch((err) => {
+                            console.log(err)
+                        });
+                    }
+                </script>
+                <div class="row justify-content-center">
+                    <div class="col-xl-12">
+                        <div class="section-tittle text-center mt-20">
+                            <a href="./courses" class="border-btn"  style="font-family: 'Fondamento', cursive;">View More Subjects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- top subjects End -->
+        <!--? About Area-3 Start -->
+        <section class="about-area3 fix">
+            <div class="support-wrapper align-items-center">
+                <div class="right-content3">
+                    <!-- img -->
+                    <div class="right-img">
+                        <img src="assets/img/gallery/study.jpg" alt="">
+                    </div>
+                </div>
+                <div class="left-content3">
+                    <!-- section tittle -->
+                    <div class="section-tittle section-tittle2 mb-20">
+                        <div class="front-text">
+                            <h2 style="font-family: 'Righteous', cursive;">Learner outcomes on courses you will take</h2>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p style="font-family: 'Fondamento', cursive;">Techniques to engage effectively with vulnerable Student and young people.</p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p style="font-family: 'Fondamento', cursive;">Helping each other to grow postively</p>
+                        </div>
+                    </div>
+                    <div class="single-features">
+                        <div class="features-icon">
+                            <img src="assets/img/icon/right-icon.svg" alt="">
+                        </div>
+                        <div class="features-caption">
+                            <p style="font-family: 'Fondamento', cursive;">Process of habitual learning</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+        <!--? Team -->
+        <section class="team-area section-padding40 fix">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-7 col-lg-8">
+                        <div class="section-tittle text-center mb-55">
+                            <h2 style="font-family: 'Righteous', cursive;">Community Collab</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-active">
+                    <div class="single-cat text-center">
+                        <div class="cat-icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="#" style="font-family: 'Fondamento', cursive;">Pranab Kumar</a></h5>	                   
+			    <p style="font-family: 'Fondamento', cursive;">20BCS7226</p>
+				<br>
+			    <h5><a href="#" style="font-family: 'Fondamento', cursive;">Tushar Sikarwar</a></h5>                            
+			    <p style="font-family: 'Fondamento', cursive;">20BCS7227</p>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services End -->
+        <!--? About Area-2 Start -->
+        <section class="about-area2 fix pb-padding">
+            <div class="support-wrapper align-items-center">
+                <div class="right-content2">
+                    <!-- img -->
+                    <div class="right-img">
+                        <img src="assets/img/gallery/prof.jpg" alt="">
+                    </div>
+                </div>
+                <div class="left-content2">
+                    <!-- section tittle -->
+                    <div class="section-tittle section-tittle2 mb-20">
+                        <div class="front-text">
+                            <h2 style="font-family: 'Righteous', cursive;">Take the next step
+                                toward your personal
+                                and professional goals
+                            with us.</h2>
+                            <p style="font-family: 'Fondamento', cursive;">The automated process all your daily tasks.Helping each other to grow and learn effectively.This Community targets the well learning self motivating and making goal oriented students.</p>
+                            <a href="./register" class="btn" style="font-family: 'Righteous', cursive;">Join now for Free</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Area End -->
+    </main>
+    <footer>
+     <div class="footer-wrappper footer-bg">
+        <!-- Footer Start-->
+        <div class="footer-area footer-padding">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-4 col-lg-5 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <!-- logo -->
+                                <div class="footer-logo mb-25">
+                                    <a href="/"><img src="assets/img/gallery/logo.svg" alt="" height="75cm" width="100cm"> </a>
+                                </div>
+                                <div class="footer-tittle">
+                                    <div class="footer-pera">
+                                        <p style="font-family: 'Fondamento', cursive;">An expert is a man who knows just that much more about his subject than his associates. Most of us are nearer the top than we think. We fail to realize how easy it is, how necessary it is to learn that fraction more.</p>
+                                    </div>
+                                </div>
+                                <!-- social -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <form >
+                                    <h4 style="font-family: 'Righteous', cursive;">Message to admin</h4>
+                                    <div class="form-row text-white">
+                                      <div class="form-group col-md-6">
+                                        <input type="text" id="myEmail" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Your Email">
+                                      </div>
+                                    </div>
+                                    <div class="form-row text-white">
+                                      <div class="form-group col-md-6">
+                                        <input type="text" id="myName" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Your Name">
+                                      </div>
+                                    </div>
+                                    <div class="input-group">
+                                      <textarea class="form-control" id="myMessage" aria-label="With textarea" placeholder="Enter your Message"></textarea>
+                                    </div>
+                                    <button type="button" onclick="sendMessage()" class=" my-2 p-3 border-0 btn-outline-light rounded-circle btn-sm justify-content-center" style="cursor: pointer; font-family: 'Fondamento', cursive;"">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        function sendMessage(){
+
+                                axios.post('/adminMes',{
+                                email: document.getElementById('myEmail').value,
+                                name: document.getElementById('myName').value,
+                                message: document.getElementById('myMessage').value,
+                            }).then((response) => {
+                                // console.log(response)
+                                alert('We got your message ');                                                        
+                            }).catch((err) => {
+                                alert('Some error came up while sending to admin !')
+                                console.log(err)
+                            });
+                        }
+                    </script>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-5">
+                        <div class="single-footer-caption mb-50">
+                            <div class="footer-tittle">
+                                <h4 style="font-family: 'Righteous', cursive;">Assignments</h4>
+                                <ul>
+                                    <li><a href="/courses?courseName=Data Structure and Algorithm & Computative Coding" style="font-family: 'Fondamento', cursive;">DSA & CC</a></li>
+                                    <li><a href="/courses?courseName=Theory of Computation" style="font-family: 'Fondamento', cursive;">TOC</a></li>
+                                    <li><a href="/courses" style="font-family: 'Fondamento', cursive;">and many more -></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-bottom area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="footer-border">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-xl-12 ">
+                            <div class="footer-copy-right text-center">
+                                <p style="font-family: 'Fondamento', cursive;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+                                  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Footer End-->
+      </div>
+  </footer> 
+  <!-- Scroll Up -->
+  <div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!-- JS here -->
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<!-- Jquery, Popper, Bootstrap -->
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- Jquery Mobile Menu -->
+<script src="./assets/js/jquery.slicknav.min.js"></script>
+
+<!-- Jquery Slick , Owl-Carousel Plugins -->
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
+<!-- One Page, Animated-HeadLin -->
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/animated.headline.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
+
+<!-- Date Picker -->
+<script src="./assets/js/gijgo.min.js"></script>
+<!-- Nice-select, sticky -->
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+<script src="./assets/js/jquery.sticky.js"></script>
+<!-- Progress -->
+<script src="./assets/js/jquery.barfiller.js"></script>
+
+<!-- counter , waypoint,Hover Direction -->
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.countdown.min.js"></script>
+<script src="./assets/js/hover-direction-snake.min.js"></script>
+
+<!-- contact js -->
+<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/jquery.form.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+<!-- Jquery Plugins, main Jquery -->	
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
+
+</body>
+</html>
